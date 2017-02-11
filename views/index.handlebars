@@ -1,0 +1,19 @@
+<h1>Event Saver</h1>
+
+<h3>Save events that have happened to you</h3>
+
+<ul>
+  {{#each events}}
+  	<li>
+  	   <p>ID: {{this.id}}</p>
+       <p>Event: {{this.wishes}}</p>
+			 <button type="delete">delete</button>
+  	</li>
+  {{/each}}
+</ul>
+
+<form action="/" method="POST">
+	<textarea type="text" name="wishes"></textarea>
+
+	<button type="submit">Submit</button>
+</form>
